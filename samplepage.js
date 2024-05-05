@@ -1,4 +1,4 @@
-import articles from "/whatarraywilllookline.js";
+import articles from "/whatarraywilllooklike.js";
 import renderContent from "/samplerendercontent.js";
 const thisid = "2";
 const thisarticle = articles.find(article => article.id === thisid);
