@@ -37,4 +37,4 @@ With the help of Google App Script, building a script to convert blog posts writ
 1. The script will return a download link for the array. Array is created inside your WorkFolder. If you run the script more than once, multiple array.js will be created. Choose the latest one looking at the time of creation.
 2. Notice that counter in the array? It's there to maintain the order. To display it in frontend, iterate and grab the respective thing.
 3. Note: You need to do dangerously render inner HTML for this. Totally safe though.
-4. Thanks. :)
+4. Look at the sample function that takes the array and render the content.
