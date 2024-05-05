@@ -1,7 +1,16 @@
 # Google-Docs-as-Database
 With the help of Google App Script, building a script to convert blog posts written in Google Docs into an array
-# Headless CMS for a small blog using Google Docs using AppScript
-
+### Total identifiers excluding metadata (i is the counter).
+	pi: Normal pargraph
+	pii: Italic paragraph
+	pbi: Bold paragraph
+	pui: Highlighed paragraph
+	imgi: Normal image
+	imgli: Float left image
+	imgri: Float right image
+	imgalti: Alt for the image
+	imgbyi: Image caption or attribution
+*You can use these identifiers to give your own styling to respective element. These descriptions are just what I found suitable for my blog.*
 1. Make a WorkFolder and inside it you have to create your Google Docs (your posts).
 2. Also create a TempFolder inside WorkFolder for temporarily copying your posts when the script runs.
 ![folders](/assets/folders.png)
@@ -32,7 +41,8 @@ With the help of Google App Script, building a script to convert blog posts writ
 ![post 4 in google docs](/assets/post4.png)
 
 ### When changing paragraphs (and thus styles), press enter first and then change the font size or font style.
-/assets/5/dog.webp (since this is fontsize 16 and now for alt you need fontsize 14, press enter first and then only change the fontsize. If you change the font size first staying in that image paragraph and then press enter, the script wouldn't catch the below item as imgalt. So remember to press enter first for new paragraph and then only change the styling.)
+	/assets/5/dog.webp
+(since this is fontsize 16 and now for alt you need fontsize 14, press enter first and then only change the fontsize. If you change the font size first staying in that image paragraph and then press enter, the script wouldn't catch the below item as imgalt. So remember to press enter first for new paragraph and then only change the styling.)
  
 1. The script will return a download link for the array. Array is created inside your WorkFolder. If you run the script more than once, multiple array.js will be created. Choose the latest one looking at the time of creation.
 2. Notice that counter in the array? It's there to maintain the order. To display it in frontend, iterate and grab the respective thing.
