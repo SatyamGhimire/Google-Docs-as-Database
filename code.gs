@@ -142,7 +142,7 @@ function allofit() {
   articlesString = articlesString + "\n ]; \n export default articles;";
   var finalArray = workFolder.createFile('articles.js', articlesString, MimeType.JAVASCRIPT);
   var link = finalArray.getDownloadUrl();
-  Logger.log('Articles exported to articles.js in the foldder with ID: ' + link);
+  Logger.log('Articles exported to articles.js in the WorkFolder, download from this link: ' + link);
 
   var newfiles = tempFolder.getFilesByType(MimeType.GOOGLE_DOCS);
   while (newfiles.hasNext()){
