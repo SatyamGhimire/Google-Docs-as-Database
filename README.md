@@ -10,12 +10,15 @@ With the help of Google App Script, building a script to convert blog posts writ
 	imgri: Float right image
 	imgalti: Alt for the image
 	imgbyi: Image caption or attribution
+ *You can use these identifiers to give your own styling to respective element. These descriptions are just what I found suitable for my blog, and I think this much is enough for a simple blog.*
+ 
  ### Not supported:
  	to have bold word or italic word inside normal paragraph and such
   	listing
 *You can use these identifiers to give your own styling to respective element. These descriptions are just what I found suitable for my blog.*
 1. Make a WorkFolder and inside it you have to create your Google Docs (your posts).
 2. Also create a TempFolder inside WorkFolder for temporarily copying your posts when the script runs.
+3. Copy paste the respective folder id in respective lines of code.
 ![folders](/assets/folders.png)
 ## For the script to work, you have to strictly follow some writing rules:
 * Use a single font (default Arial is good) and use one of these three font sizes : 11(default),12,13.
@@ -33,14 +36,17 @@ With the help of Google App Script, building a script to convert blog posts writ
 * For links, write like this
 >I want you to visit$https://google.com, and here is what I am talking about. Also for more%information%please%visit$https://somewebsite.com and that will be it.
 >Use % for space if you want the whole thing to be a link, and dont give any space before and after $.
->This will render <a href= /"after the $ sign" className= "art-lnk"> before the $ sign</a>. Use your own class-name.
+>This will render <a href= /"after the $ sign" className= "art-lnk"> before the $ sign<//a>. Use your own class-name. Ignore the slashes in anchor tag.
 * For bold text, write it in bold.
 * For italic text, write it in italic.
 * For special or highlight text, you can write it in underline.
-![post 1 in google docs](/assets/post1.png)
-![post 2 in google docs](/assets/post2.png)
-![post 3 in google docs](/assets/post3.png)
-![post 4 in google docs](/assets/post4.png)
+
+### Look at the posts:
+
+https://docs.google.com/document/d/1vUHWEvGvPPsieAzeTqVEWeZczzguV5q7F2VFgFOedZ0/edit?usp=sharing
+https://docs.google.com/document/d/16bAWuJwfRADTwUKQrwak7AmCcYouGvWa6PYE0k3BVvc/edit?usp=sharing
+https://docs.google.com/document/d/1zqb8G2Q44_QiWhTbYvU0XfY7DE5d7jeqOKpFTauq--E/edit?usp=sharing
+https://docs.google.com/document/d/1dinpNeBLjkpfsbnsC9RKysz73kxH8qzYIt2K4GInmg0/edit?usp=sharing
 
 ### When changing paragraphs (and thus styles), press enter first and then change the font size or font style.
 	/assets/5/dog.webp
