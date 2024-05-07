@@ -1,5 +1,6 @@
 # Google-Docs-as-Database
-With the help of Google App Script, building a script to convert blog posts written in Google Docs into an array
+With the help of Google App Script, building a script to convert blog posts written in Google Docs into an array.
+*Watch a YouTube video? https://youtu.be/w6wTzgNP2Yc*
 ### Total identifiers excluding metadata (i is the counter).
 	pi: Normal pargraph
 	pii: Italic paragraph
